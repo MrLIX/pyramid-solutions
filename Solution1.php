@@ -3,12 +3,13 @@
 /**
  * Рекурсия - Top to bottom
  * @param array $array
- * @param $i
- * @param $j
- * @param $row
+ * @param int $i - array index
+ * @param int $j - array inner index
+ * @param int $row - length of array
  * @return int
+ * Time Complexity: O(2^N)
  */
-function pyramid(array $array, $i, $j, $row): int
+function pyramid(array $array, int $i, int $j, int $row): int
 {
     if ($j === $row) return 0;
     if ($i === $row - 1) return $array[$i][$j];

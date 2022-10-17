@@ -4,6 +4,7 @@
  * Bottom-Up
  * @param array $array
  * @return int
+ * Time Complexity: O(N^2)
  */
 function pyramid(array $array): int
 {
